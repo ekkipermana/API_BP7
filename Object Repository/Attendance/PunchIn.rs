@@ -1,39 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GetToken</name>
+   <name>PunchIn</name>
    <tag></tag>
-   <elementGuidId>26e7b3fa-e6a6-4161-b4d7-3b06b931c0d3</elementGuidId>
+   <elementGuidId>bf5d9248-101d-468e-a5ba-31eb26968c09</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\&quot;client_id\&quot; : \&quot;ekkipermana\&quot;,\n\&quot;client_secret\&quot; : \&quot;ekkiekki\&quot;,\n\&quot;grant_type\&quot; : \&quot;client_credentials\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
+  &quot;contentType&quot;: &quot;multipart/form-data&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;,
+  &quot;parameters&quot;: [
+    {
+      &quot;name&quot;: &quot;id&quot;,
+      &quot;value&quot;: &quot;004&quot;,
+      &quot;type&quot;: &quot;Number&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;timezone&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;String&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;note&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;String&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;datetime&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;Date&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    }
+  ]
 }</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyType>form-data</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>application/json</value>
+      <value>multipart/form-data</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Cookie</name>
+      <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${access_token}</value>
+      <value>Bearer 304008782bba871b2e6301d92e31c8b830e30cf4</value>
    </httpHeaderProperties>
    <katalonVersion>8.0.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://qa.cilsy.id/symfony/web/index.php/oauth/issueToken</restUrl>
+   <restUrl>http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/:id/punch-in</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -42,20 +67,6 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <variables>
-      <defaultValue>GlobalVariable.baseURL</defaultValue>
-      <description></description>
-      <id>4263afcd-00ba-44b3-b4d8-6dc7a41da877</id>
-      <masked>false</masked>
-      <name>url</name>
-   </variables>
-   <variables>
-      <defaultValue>'\r\n'</defaultValue>
-      <description></description>
-      <id>665988e0-eadf-4700-8e45-7d18ad4956d1</id>
-      <masked>false</masked>
-      <name>access_token</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

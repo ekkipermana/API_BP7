@@ -40,7 +40,7 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${access_token}</value>
+      <value>Bearer 304008782bba871b2e6301d92e31c8b830e30cf4</value>
    </httpHeaderProperties>
    <katalonVersion>8.0.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
@@ -55,6 +55,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c6750563-ddb1-4fd9-96ed-589215e8663c</id>
+      <masked>false</masked>
+      <name>access_token</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
