@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Admin_GetUser_InvalidData</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>9a5f16e8-46e3-4111-be4e-aa19e53eda26</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Admin_GetOrganisationInformation_ValidData</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>47ff659b-742d-4c6b-a31a-0dc6f40e9625</testCaseGuid>
-</TestCaseEntity>

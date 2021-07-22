@@ -21,6 +21,6 @@
       <guid>63289829-8b65-4c02-a81c-39758efef4a7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/01_Get_Login/Admin-Login_Valid</testCaseId>
+      <testCaseId>Test Cases/Admin/01_Get_Login/ADM01_P_Login_Valid</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

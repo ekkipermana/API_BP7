@@ -1,16 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get_Users</name>
+   <name>Post_PunchIn</name>
    <tag></tag>
-   <elementGuidId>2486d624-4f55-4e38-911f-e961dafb4ff5</elementGuidId>
+   <elementGuidId>bf5d9248-101d-468e-a5ba-31eb26968c09</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;contentType&quot;: &quot;multipart/form-data&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;,
+  &quot;parameters&quot;: [
+    {
+      &quot;name&quot;: &quot;timezone&quot;,
+      &quot;value&quot;: &quot;${timezone}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;note&quot;,
+      &quot;value&quot;: &quot;${note}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;datetime&quot;,
+      &quot;value&quot;: &quot;${datetime}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    }
+  ]
+}</httpBodyContent>
+   <httpBodyType>form-data</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>multipart/form-data</value>
+   </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -21,8 +51,8 @@
    <katalonVersion>8.0.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${url}/api/v1/user</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${url}/api/v1/employee/4/punch-in</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -34,16 +64,37 @@
    <variables>
       <defaultValue>GlobalVariable.access_token</defaultValue>
       <description></description>
-      <id>24e72a9d-67e8-4c54-a43e-4064210ffbe0</id>
+      <id>d579830c-4d7a-4575-ba7d-5eee121f39a6</id>
       <masked>false</masked>
       <name>access_token</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.baseURL</defaultValue>
       <description></description>
-      <id>4ffd10e8-6118-4a04-8c3a-2ad2b363bb63</id>
+      <id>f5e8df40-dfed-49db-ae50-b23b4c04d706</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5198d65b-ffad-4ef5-9938-391d222608f3</id>
+      <masked>false</masked>
+      <name>datetime</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f13fc48d-0a14-4e09-992f-292a49b51890</id>
+      <masked>false</masked>
+      <name>note</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6fb10af5-5c20-4234-899f-5cddbd5f00ff</id>
+      <masked>false</masked>
+      <name>timezone</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

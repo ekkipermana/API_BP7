@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM03_N_Login_UsernameWrong</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3ab09387-97c8-4cfd-99dd-6b0be665c10f</testCaseGuid>
+</TestCaseEntity>

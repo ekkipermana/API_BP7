@@ -11,11 +11,18 @@
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
    <httpBodyType></httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer ${access_token}</value>
+   </httpHeaderProperties>
    <katalonVersion>8.0.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://qa.cilsy.id/symfony/web/index.php/api/v1/organization</restUrl>
+   <restUrl>${url}/api/v1/organization</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -30,6 +37,13 @@
       <id>f846a522-958e-497d-b667-527a1fbc79c6</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.access_token</defaultValue>
+      <description></description>
+      <id>e788a2d6-5171-44ec-947b-497f5258e8a5</id>
+      <masked>false</masked>
+      <name>access_token</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

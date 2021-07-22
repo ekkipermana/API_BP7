@@ -14,4 +14,14 @@
       <initValue>''</initValue>
       <name>Gtoken</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'a2b2fba4d4a91338fa85a11dd2b2dc096b2312fe'</initValue>
+      <name>access_token</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'4ad3abe3a9940578630b2a0cf972ac1fef4b4fa2'</initValue>
+      <name>tokens</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Admin_GetOrganasationInformation_InvalidData</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a7f4819a-7a3c-4d7b-9618-fb8868c65938</testCaseGuid>
-</TestCaseEntity>

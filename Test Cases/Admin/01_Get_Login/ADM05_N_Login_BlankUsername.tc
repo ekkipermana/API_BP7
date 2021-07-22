@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM05_N_Login_BlankUsername</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fb744e14-7fb1-4195-8398-980f8c3aefff</testCaseGuid>
+</TestCaseEntity>

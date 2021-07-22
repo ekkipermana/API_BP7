@@ -25,9 +25,9 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Cookie</name>
+      <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${access_token}</value>
+      <value>${access_token}</value>
    </httpHeaderProperties>
    <katalonVersion>8.0.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
@@ -43,14 +43,14 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.baseURL</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>4263afcd-00ba-44b3-b4d8-6dc7a41da877</id>
       <masked>false</masked>
       <name>url</name>
    </variables>
    <variables>
-      <defaultValue>'\r\n'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>665988e0-eadf-4700-8e45-7d18ad4956d1</id>
       <masked>false</masked>
