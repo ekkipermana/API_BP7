@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PUO02_N_PunchIn_Invalid</name>
+   <name>PUI02_N_PunchIn_emptyTimezone</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>da12fc00-6a74-4477-95c9-d68b8c64e0e4</testCaseGuid>
+   <testCaseGuid>3152624a-c2bf-4af9-992d-68b916ec4d59</testCaseGuid>
 </TestCaseEntity>

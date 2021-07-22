@@ -17,3 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+response = WS.sendRequest(findTestObject('Attendance/Post_PunchOut', [('timezone') : 'Asia/Makassar', ('note') : 'Outt', ('datetime') : '2021-07-21 08:15']))
+
+WS.verifyResponseStatusCode(response, 200)
+
+WS.verifyElementPropertyValue(response, 'success', 'Successfully Punched Out')

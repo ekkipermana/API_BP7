@@ -16,19 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import groovy.json.JsonSlurper as JsonSlurper
 
-def response = WS.sendRequest(findTestObject('Admins/Post_Login'))
+response = WS.sendRequest(findTestObject('Attendance/Post_PunchOut', [('timezone') : 'yyyyyy', ('note') : 'Outt', ('datetime') : 'hhhh']))
 
-def jsonSlurper = new JsonSlurper()
+WS.verifyResponseStatusCode(response, 202)
 
-def result = jsonSlurper.parseText(response.getResponseBodyContent())
-
-def token = GlobalVariable.Gtoken
-
-println(token)
-
-//WS.verifyResponseStatusCode(response, 202)
-response = WS.sendRequest(findTestObject('Admins/Post_Login'))
-
-WS.verifyResponseStatusCode(response, 200)
+WS.verifyElementPropertyValue(response, 'success', 'null')

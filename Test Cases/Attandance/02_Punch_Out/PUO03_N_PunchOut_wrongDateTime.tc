@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PUO03_N_PunchOut_wrongDateTime</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2e616a81-432c-4b63-9c1e-a6d124ee54af</testCaseGuid>
+</TestCaseEntity>

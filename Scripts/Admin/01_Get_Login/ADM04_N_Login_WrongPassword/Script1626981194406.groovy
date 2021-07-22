@@ -29,8 +29,8 @@ def token = GlobalVariable.Gtoken
 println(token)
 //
 //WS.verifyResponseStatusCode(response, 200)
-response = WS.sendRequest(findTestObject('Admins/Post_Login', [('username') : 'Admin', ('password') : '']))
+response = WS.sendRequest(findTestObject('Admins/Post_Login', [('username') : 'Admin', ('password') : 'hahahaha*']))
 
 WS.verifyResponseStatusCode(response, 202)
 
-WS.verifyElementPropertyValue(response, 'error.text', 'password must not be empty')
+WS.verifyElementPropertyValue(response, 'error.text', 'Credentials Are Wrong Please Try Again')

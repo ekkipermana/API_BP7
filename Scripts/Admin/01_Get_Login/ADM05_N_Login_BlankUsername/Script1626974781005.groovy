@@ -16,4 +16,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import groovy.json.JsonSlurper as JsonSlurper
 
+def response = WS.sendRequest(findTestObject('Admins/Post_Login'))
+
+def jsonSlurper = new JsonSlurper()
+
+def result = jsonSlurper.parseText(response.getResponseBodyContent())
+
+def token = GlobalVariable.Gtoken
+
+println(token)
+
+response = WS.sendRequest(findTestObject('Admins/Post_Login', [('username') : '', ('password') : 's3Kol4HQA!*']))
+
+WS.verifyResponseStatusCode(response, 202)
+
+WS.verifyElementPropertyValue(response, 'error.text', 'username must not be empty')
