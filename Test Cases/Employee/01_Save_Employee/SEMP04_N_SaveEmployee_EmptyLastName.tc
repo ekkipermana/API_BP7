@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>AGTO02_N_OrganizationInformation_Invalid</name>
+   <name>SEMP04_N_SaveEmployee_EmptyLastName</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>47ff659b-742d-4c6b-a31a-0dc6f40e9625</testCaseGuid>
+   <testCaseGuid>630742e7-5047-4d0e-a92b-0fbb9c6168eb</testCaseGuid>
 </TestCaseEntity>

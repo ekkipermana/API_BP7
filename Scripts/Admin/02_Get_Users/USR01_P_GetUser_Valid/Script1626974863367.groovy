@@ -22,4 +22,3 @@ response = WS.sendRequest(findTestObject('Admins/Get_Users'))
 WS.verifyResponseStatusCode(response, 200)
 
 WS.verifyElementPropertyValue(response, 'data[0].employeeName', 'Karyawan Teladan')
-

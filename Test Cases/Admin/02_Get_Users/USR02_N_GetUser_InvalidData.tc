@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>USR02_N_GetUser_InvalidData</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>f5cf96c9-e9e6-4903-9a22-fa10b306b43a</testCaseGuid>
-</TestCaseEntity>

@@ -17,3 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+response = WS.sendRequest(findTestObject('Employee/Get_EmployeeDetail'))
+
+WS.verifyResponseStatusCode(response, 200)
+
+WS.verifyElementPropertyValue(response, 'data.firstName', 'Jhons')
+
+WS.verifyElementPropertyValue(response, 'data.middleName', 'Zero')
+
+WS.verifyElementPropertyValue(response, 'data.lastName', 'Logic')
+
+WS.verifyElementPropertyValue(response, 'data.code', '6314')
+
+WS.verifyElementPropertyValue(response, 'data.fullName', 'Jhons Zero Logic')

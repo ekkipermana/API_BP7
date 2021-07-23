@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>DEMP02_N_EmployeeDetail_Invalid</name>
+   <name>SEMP05_N_SaveEmployee_EmptyCode</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ceea16d9-850f-4c49-95d2-897b225e3ea7</testCaseGuid>
+   <testCaseGuid>10af999f-d5e3-487d-af6e-852428f1c1e3</testCaseGuid>
 </TestCaseEntity>

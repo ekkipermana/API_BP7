@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
-response = WS.sendRequest(findTestObject('Attendance/Post_PunchIn', [('timezone') : 'Asia/Makassar', ('note') : 'Punchhh', ('datetime') : '2021-07-20 08:34']))
+response = WS.sendRequest(findTestObject('Attendance/Post_PunchIn', [('timezone') : 'Asia/Makassar', ('note') : 'PPPccx', ('datetime') : '2021-07-23 08:36']))
 
 WS.verifyResponseStatusCode(response, 200)
 

@@ -17,3 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+response = WS.sendRequest(findTestObject('Employee/Post_SaveEmployee', [('firstName') : 'Ekki', ('middleName') : 'Permana', ('lastName') : 'Pramana', ('code') : '785']))
+
+WS.verifyResponseStatusCode(response, 200)
+
+WS.verifyElementPropertyValue(response, 'success', 'Successfully Saved')
+
+

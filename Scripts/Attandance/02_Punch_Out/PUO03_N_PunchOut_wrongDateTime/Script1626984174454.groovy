@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Attendance/Post_PunchOut', [('timezone') : 'yyyyyy', ('note') : 'Outt', ('datetime') : 'hhhh']))
+response = WS.sendRequest(findTestObject('Attendance/Post_PunchOut', [('timezone') : 'yyyyysy', ('note') : 'Outt', ('datetime') : 'hhhh']))
 
 WS.verifyResponseStatusCode(response, 202)
 

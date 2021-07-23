@@ -16,12 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'d03c4343bbc7aeaca6518bae78c1575be6e89b87'</initValue>
+      <initValue>'9ce0264c4c8cbd6e9acfc2e2bc51455a566b10ad'</initValue>
       <name>access_token</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'4ad3abe3a9940578630b2a0cf972ac1fef4b4fa2'</initValue>
-      <name>tokens</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

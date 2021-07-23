@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>UEMPD02_N_UpdateEmpDet_Invalid</name>
+   <name>SEMP03_N_SaveEmployee_EmptyMiddleName</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ae5088b1-2b76-4449-9361-ce832c916b32</testCaseGuid>
+   <testCaseGuid>2527b239-9be2-4796-96a7-9f0958ccf585</testCaseGuid>
 </TestCaseEntity>

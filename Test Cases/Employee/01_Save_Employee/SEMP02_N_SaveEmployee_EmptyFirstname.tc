@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>SEMP02_N_SaveEmployee_Invalid</name>
+   <name>SEMP02_N_SaveEmployee_EmptyFirstname</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ba15d19e-8d0d-40af-822e-442009a1db63</testCaseGuid>
